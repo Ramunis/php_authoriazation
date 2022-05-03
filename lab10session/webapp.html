@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ramunis Soft</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="Scripts/swfobject_modified.js"></script>
+</head>
+	
+
+<body>
+<header><h1>Web App</h1></header>
+<nav>
+	<a href="index.php" title="prod">Main</a>
+	<a href="https://ramunisoft.blogspot.com/" title="prod">Products</a>
+	<a href="services.html" title="serv">Services</a>
+	<a href="view_tbl_users.php">Users</a>
+	<a href="webapp.html" title="prod">Web App</a>
+	<a href="contacts.html" title="cont">Contacts</a>
+</nav>
+<main>
+	<h1>Example Web Appications</h1>
+  <section>
+	  <script>
+	  function presssum()
+		  {
+			  var v = document.getElementById('elem2').value;
+			  var p = document.getElementById('elem3').value;
+			  var s = (v*100)/p;
+			  alert(s);
+			  document.getElementById('elem1').value = s;
+		  }
+	  function pressval()
+		  {
+			  var s = document.getElementById('elem1').value;
+			  var p = document.getElementById('elem3').value;
+			  var v = (s/100)*p;
+			  alert(v);
+			  document.getElementById('elem2').value = v;
+		  }
+	  function pressper()
+		  {
+			  var s = document.getElementById('elem1').value;
+			  var v = document.getElementById('elem2').value;
+			  var p = (v * 100) / s;
+			  alert(p);
+			  document.getElementById('elem3').value = p;
+		  }
+	  </script>
+	  <h1>Percent Calculator</h1>
+	  <p><label for="site-search">Sum:</label></p>
+	  <p><input id="elem1" type="number" size="20" name="sum"  value="4500" type="submit"></p>
+	  <p><input value="Sum" onclick="presssum()" name="bsum"  type="button"></p>
+	  <p><label for="site-search">Value:</label></p>
+	  <p><input id="elem2" type="number" size="20" name="val"  value="200"></p>
+	  <p><input value="Value" onclick="pressval()" name="bval"  type="button"></p>
+	  <p><label for="site-search">%:</label></p>
+	  <p><input id="elem3" type="number" size="20" name="perc"  value="5"></p>
+	  <p><input value="%" onclick="pressper()" name="bper"  type="button"></p>
+	  </section>
+	
+    <section>
+		<h1>Random X,Y on map</h1>
+		<script>
+		function fun1() 
+		{
+        var rad=document.getElementsByName('r1');
+        for (var i=0;i<rad.length; i++) {
+        if (rad[i].checked) {
+        alert('Выбран '+i+' radiobutton');
+        }
+       }
+        }
+		function randomInteger(min, max) {
+        // получить случайное число от (min-0.5) до (max+0.5)
+        let rand = min - 0.5 + Math.random() * (max - min + 1);
+        return Math.round(rand);
+    }
+		function press() {
+			fun1();
+			var d= randomInteger(-90,90);
+            var s= randomInteger(-180,180);
+            var d1 = randomInteger(1000000,9999999);
+            var s1 = randomInteger(1000000,9999999);
+			alert("Maps will opening");
+			//alert(d+'.'+d1+','+s+'.'+s1);						
+			window.open("https://www.google.com/maps/@"+d+'.'+d1+','+s+'.'+s1+",12z");
+		}
+	</script>
+	<p><input value="Get coords" onclick="press()" type="button"></p>
+ </section>
+</main>
+<aside>
+<h2>Advert</h2>
+  <script data-ad-client="ca-pub-6633375852034946" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</aside>
+	
+<footer>Contacts   <a href="mailto:seva.m@live.com">email</a></footer>
+</body>
+</html>

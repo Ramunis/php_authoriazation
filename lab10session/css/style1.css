@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: aliceblue;
+	margin:10px;
+}
+
+header {
+	margin:0px;
+	padding:0px;
+	background: royalblue; height: 100px; width: 100%;
+	background-position:left;
+    background-repeat:no-repeat ;
+    background-size: 90px 90px;
+	background-image: url(images/logo.png);
+	
+}
+h1 {
+    color: black;
+    text-align:center;
+    font:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+nav {
+    margin-top:0px;
+	padding:0px;
+	background: skyblue; height: 30px; width: 100%;	
+}
+a {
+    font:bold;
+	color: gray;
+}
+main {
+	margin-top:0px;
+	padding:0px;
+	background: gainsboro; height: 800px; width: 75%;	
+}
+h2 {
+    color: black;
+    text-align:center;
+    font:normal;
+}
+aside {
+margin-top:-800px;
+background: gainsboro; float: right;
+width: 20%; height: 800px; 
+}
+footer {
+margin-top:0px;	
+clear: both; background:gray;
+height:20px; width: 100%; 
+}
+table {
+	margin-left:5px;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  background: white;
+  max-width: 10%;
+  width: 10%;
+  border-collapse: collapse;
+  text-align: left;
+}
+}
+section {
+	margin-left:15px;
+background: beige; float: left;
+border-style:dotted;border-width:1px; border-color:gray;
+width: 48%; height: 720px;
+}
+article {
+	margin-left:15px;
+	margin-left:540px;
+background: beige; float: left;
+border-style:solid;border-width:1px; border-color:gray;
+width: 20%; height: 600px;
+}
+dl {
+   margin: 50px;
+   margin-bottom: 0px;
+}
+dt {
+	font:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+img {
+	margin-left:60px;
+	padding-top:20px;
+}
+iframe {
+	margin-left:150px;
+}
+h3 {
+	margin-left:600px;
+}
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+p {
+	margin-left:230px;
+}
